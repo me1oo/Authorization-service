@@ -15,7 +15,7 @@ class authController {
 
     async registration (req, res) {
         try{
-            const errors = validationresult(req);
+            const errors = validationResult(req);
                 if(!errors.isEmpty()) {
                     return res.status(400).json({message: "Ошибка при регистрации", errors});
                 }
