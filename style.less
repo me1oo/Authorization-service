@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*:focus {
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: none; 
+    padding: 0;    
+    -webkit-print-color-adjust: exact;
+    box-sizing: border-box;  
+    }
+  
+html {
+    overflow
+: hidden;
+    height: 100%;
+}
+  
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    background: url(/storage/bg.svg) no-repeat center;
+    background-color: #E1F5FE;
+}
+
+.container  {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    overflow: auto;
+}
+
+.row {
+    margin: auto 0;
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    margin: 0 auto;
+    max-width: 415px;
+    min-width: 320px;
+}
+
+.headerForm  {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.inputForm {
+    min-width: 394px-24;
+    min-height: 152px-24;
+    margin: 48px 4px;
+    padding: 12px;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    word-break:break-all;
+}
+.inputForm input {
+    
+    background: transparent;
+    border: none;
+    width: -webkit-fill-available;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: -5px;
+}
+
+.inputForm input::placeholder {
+    color: #000000DE;
+    font-size: 16px;
+  }
+
+.verify {
+    display: inline-block;
+    width: -webkit-fill-available;
+    height: 40px-1;
+    margin: 12px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 4px 0px 0px;
+    background: #7e75750f;
+    font-size: 16px;
+    border-bottom: #0000006B 1px solid;
+}
+
+.wrong {
+    color: #FF5252;
+}
+
+.wrong_field {
+    border-bottom: #FF5252 2px solid;
+
+}
+
+.succhess {
+    color: #1976D2;
+}
+
+.succhess_field {
+    border-bottom: #1976D2 2px solid;
+
+}
+
+#emptyLogin {
+    font-size: 10px;
+    height: 10px;
+}
+
+#emptyPass {
+    font-size: 10px;
+    height: 10px;
+}
+
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+
+.buttonForm {
+    min-width: 84px;
+    min-height: 36px;
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 6px 12.5px;
+    background: #1976D2;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-size: 14px;
+    border: none;
+    letter-spacing: 1.25px;
+
+
+}
+
+.response {
+    display: block;
+    text-align: center;
+    margin: 12px;
+
+}
+
+@media  screen and (max-width: 1280px) {
+    .inputForm {
+        min-width: 407px-24;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .inputForm {
+        min-width: 360px-24;
+    }
+    .inputForm input {
+        bottom: -2px;
+    }
+    .buttonForm {
+        min-width: 71px;
+        min-height: 28px;
+        font-size: 12px;
+    }
+    .headerForm {
+        font-size: 24px;
+    }
+    .verify {
+        height: 40px-16-1;
+        padding: 2px 12px 14px 12px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .inputForm {
+        max-width: 360px-24;
+        min-width: 312-24px;
+        margin: 24px 4px;
+    }
+    .headerForm {
+        font-size: 20px;
+    }
+}
